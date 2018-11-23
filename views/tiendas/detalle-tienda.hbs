@@ -1,0 +1,14 @@
+<h2>{{nombre}}</h2>
+<h3>{{giro}}</h3>
+<strong>{{owner}}</strong>
+<h2>Productos</h2>
+<ul>
+  {{#each products}}
+  <li><a href="/productos/detail/{{this.id}}">{{this.nombre}}</li></a>
+  {{/each}}
+</ul>
+<hr>
+<a href="/productos/new/{{_id}}"> Agrega Productos</a>
+<hr>
+<a href="/tiendas/update/{{_id}}">Editar</a>
+<a href="/tiendas/delete/{{_id}}">Eliminar</a>

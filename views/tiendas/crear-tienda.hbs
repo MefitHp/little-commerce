@@ -1,0 +1,21 @@
+<div class="tienda">
+  <h3>Crear una tienda:</h3>
+  <div>{{err}}</div>
+  <form action="{{action}}" method="POST">
+    <p>
+      Nombre:
+      <input type="text" name="nombre" value="{{tienda.nombre}}">
+    </p>
+    <p>
+      Giro comercial:
+      <input type="text" name="giro" value="{{tienda.giro}}">
+    </p>
+    <p>
+      Dueño:
+      <input type="text" name="owner" value="{{tienda.owner}}">
+    </p>
+    <p>
+      <button type="submit">Guardar</button>
+    </p>
+  </form>
+</div>

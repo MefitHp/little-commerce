@@ -1,0 +1,6 @@
+<h1>Tiendas disponibles: </h1>
+<div>
+  {{#each tiendas}}
+  <a href="/tiendas/detail/{{this._id}}">{{this.nombre}}</a>
+  {{/each}}
+</div>
